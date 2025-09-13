@@ -1,79 +1,74 @@
-
-
-# Airline Reservation System
-
-A C++17 console-based application to manage flights, seat booking, and passenger records.
-It simulates an airline booking workflow — allowing you to  list flights ,  book seats ,  cancel reservations , and  view passenger details  — all from the terminal.
+Perfect 🙂 — here’s your **README.md** updated with a **screenshots section**.
+I’ve left placeholder image paths — once you add your real screenshots to an `images` folder in your repo, the README will display them automatically.
 
 ---
 
-## Features
+````markdown
+# ✈️ Airline Reservation System  
 
-*  Flight Management 
-
-  * Add new flights (admin mode).
-  * View all available flights.
-  * See flight details, including seat map.
-
-*  Passenger Management 
-
-  * Book tickets with seat selection & food preferences.
-  * View all passengers or passengers on a specific flight.
-  * Cancel reservations using Passenger ID.
-
-*  Seat Map 
-
-  * Visual representation of booked (1) and available (0) seats.
-
-*  Data Persistence 
-
-  * Stores data in text files: `flights.txt`, `passengers.txt`, and `next_id.txt`.
-  * Preserves data between program runs.
+A lightweight **C++17 console application** that handles airline flight schedules, ticket booking, passenger records, and cancellations — all in one place.  
+This project was built to practice **file handling** and **object-oriented programming** concepts while simulating a real-world airline reservation workflow.  
 
 ---
 
-## Technologies
+## 🚀 What It Does  
 
-*  Language:  C++17
-*  Concepts:  Object-Oriented Programming, Linked Lists, File Handling
-*  Environment:  Works in VS Code, Code::Blocks, or any terminal compiler
+- **Manage Flights**  
+  - View a list of all flights with departure/arrival details.  
+  - Add new flights (admin mode).  
+  - Show seat maps to check availability at a glance.  
+
+- **Handle Passengers**  
+  - Book tickets with custom seat selection and food preferences.  
+  - View all passengers or just those on a specific flight.  
+  - Cancel reservations quickly using Passenger ID.  
+
+- **Data Persistence**  
+  - All flights, passengers, and IDs are stored in simple text files, so your data survives after program restarts.  
 
 ---
 
-## File Structure
+## 🛠️ Tech Used  
 
-| File                           | Purpose                                   |
-| ------------------------------ | ----------------------------------------- |
-| AirlineReservationSystem.cpp   | Main source code                          |
-| flights.txt                    | Flight data (auto-generated if absent)    |
-| passengers.txt                 | Passenger data (auto-generated if absent) |
-| next_id.txt                    | Keeps track of Passenger IDs              |
+- **Language:** C++17  
+- **Core Concepts:** Classes, Linked Lists, File I/O  
+- **Environment:** Works in VS Code, Code::Blocks, or any C++17-compatible compiler  
 
+---
 
+## 📂 Project Structure  
 
-## How to Compile and Run
+| File | Purpose |  
+|-------|---------|  
+| `AirlineReservationSystem.cpp` | Main program source code |  
+| `flights.txt` | Stores flight data (auto-created if missing) |  
+| `passengers.txt` | Stores passenger data (auto-created if missing) |  
+| `next_id.txt` | Tracks Passenger IDs between runs |  
 
-1. Compile: 
-     
+---
 
+## 📝 How to Build and Run  
+
+1. **Compile:**  
+
+```bash
 g++ -std=c++17 AirlineReservationSystem.cpp -o AirlineReservationSystem
+````
 
+2. **Run:**
 
-2. Run: 
+```bash
+./AirlineReservationSystem       # on Linux / Mac
+AirlineReservationSystem.exe     # on Windows
+```
 
+---
 
-./AirlineReservationSystem    # Linux / Mac
+## 💻 Menu Overview
 
+When you start the program, you’ll see:
 
-AirlineReservationSystem.exe  # Windows
-
-
-
-## Menu Options
-
-On running, you’ll see:
-
-
+```
 ===== Airline Reservation System =====
 1. List All Flights
 2. View Flight Details
@@ -82,12 +77,35 @@ On running, you’ll see:
 5. View All Passengers
 6. Add Flight (admin)
 7. Exit
+```
 
+---
 
+## 📸 Screenshots
 
-##  Example Data
+### Main Menu
 
- flights.txt (auto-generated) 
+![Main Menu](images/menu.png)
+
+### Flights List
+
+![Flights List](images/list-flights.png)
+
+### Booking Tickets
+
+![Booking Tickets](images/book-ticket.png)
+
+### View Passengers
+
+![View Passengers](images/view-passengers.png)
+
+*(Save your screenshots in a folder named `images` in your repo and name them accordingly.)*
+
+---
+
+## 📄 Example Flight Data
+
+If you don’t have a `flights.txt` file, the program will create one with sample data like:
 
 ```
 F100|AirWave|Pune|Mumbai|08:00|09:10|30|1500
@@ -95,21 +113,29 @@ F200|SkyHigh|Delhi|Mumbai|09:30|11:30|40|3500
 F300|BlueAir|Chennai|Bengaluru|06:45|07:55|25|1200
 ```
 
- next_id.txt  (auto-generated) 
-"1"
-
-
-##  Future Improvements
-
-* Switch from text files to an SQL database.
-* Add a graphical user interface.
-* Integrate authentication and payment simulation.
+`next_id.txt` simply holds the next passenger ID (starts at 1).
 
 ---
 
-##  Author
+## 🔮 Future Ideas
 
-*  Harsh Chavan
-* GitHub: https://github.com/harsh8767
+* Store data in a database instead of text files.
+* Add a GUI or a web front-end.
+* Include authentication and mock payment handling.
+
+---
+
+## 👨‍💻 Author
+
+Made by **Your Name** — \[your GitHub profile link here]
+
+---
+
+```
+
+---
 
 
+
+Do you want me to also create **badges (like language, license, build)** at the top of the README to make it look even more professional? (They’re easy to add.)
+```
