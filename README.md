@@ -1,17 +1,13 @@
-Perfect 🙂 — here’s your **README.md** updated with a **screenshots section**.
-I’ve left placeholder image paths — once you add your real screenshots to an `images` folder in your repo, the README will display them automatically.
 
----
 
-````markdown
-# ✈️ Airline Reservation System  
+#  Airline Reservation System  
 
 A lightweight **C++17 console application** that handles airline flight schedules, ticket booking, passenger records, and cancellations — all in one place.  
 This project was built to practice **file handling** and **object-oriented programming** concepts while simulating a real-world airline reservation workflow.  
 
 ---
 
-## 🚀 What It Does  
+##  What It Does  
 
 - **Manage Flights**  
   - View a list of all flights with departure/arrival details.  
@@ -28,7 +24,7 @@ This project was built to practice **file handling** and **object-oriented progr
 
 ---
 
-## 🛠️ Tech Used  
+##  Technologies Used  
 
 - **Language:** C++17  
 - **Core Concepts:** Classes, Linked Lists, File I/O  
@@ -36,7 +32,7 @@ This project was built to practice **file handling** and **object-oriented progr
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 
 | File | Purpose |  
 |-------|---------|  
@@ -47,24 +43,24 @@ This project was built to practice **file handling** and **object-oriented progr
 
 ---
 
-## 📝 How to Build and Run  
+## How to Build and Run  
 
 1. **Compile:**  
 
-```bash
+```
 g++ -std=c++17 AirlineReservationSystem.cpp -o AirlineReservationSystem
 ````
 
 2. **Run:**
 
-```bash
+```
 ./AirlineReservationSystem       # on Linux / Mac
 AirlineReservationSystem.exe     # on Windows
 ```
 
 ---
 
-## 💻 Menu Overview
+## Menu Overview
 
 When you start the program, you’ll see:
 
@@ -81,7 +77,7 @@ When you start the program, you’ll see:
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Main Menu
 
@@ -99,8 +95,6 @@ When you start the program, you’ll see:
 
 ![View Passengers](images/view-passengers.png)
 
-*(Save your screenshots in a folder named `images` in your repo and name them accordingly.)*
-
 ---
 
 ## 📄 Example Flight Data
@@ -117,7 +111,7 @@ F300|BlueAir|Chennai|Bengaluru|06:45|07:55|25|1200
 
 ---
 
-## 🔮 Future Ideas
+## Future Ideas
 
 * Store data in a database instead of text files.
 * Add a GUI or a web front-end.
@@ -125,17 +119,9 @@ F300|BlueAir|Chennai|Bengaluru|06:45|07:55|25|1200
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-Made by **Your Name** — \[your GitHub profile link here]
-
----
-
-```
-
+Made by harsh8767 — (https://github.com/harsh8767)
 ---
 
 
-
-Do you want me to also create **badges (like language, license, build)** at the top of the README to make it look even more professional? (They’re easy to add.)
-```
