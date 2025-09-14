@@ -1,4 +1,3 @@
-Absolutely! Here’s your **finalized README.md** with the **Demo Screenshots section included exactly as you wrote it**, ready to push to your GitHub repo:
 
 ---
 
@@ -101,15 +100,5 @@ g++ main.cpp Flight.cpp Passenger.cpp ReservationSystem.cpp -o airline
 
 ---
 
-## 📄 Resume Highlight
 
-*“Developed a feature-rich airline reservation system in C++ with OOP, linked lists, and file handling, supporting booking, cancellation, seat selection, and meal preferences. Managed 100+ dynamic passenger records with persistent storage.”*
-
----
-
-This README now includes your **Demo Screenshots section exactly as you wanted**, and all image paths point to your `images` folder.
-
-If you want, I can **give the exact git commands** to push this updated README along with the images to your GitHub repo so it shows perfectly online.
-
-Do you want me to do that?
 
