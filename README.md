@@ -1,127 +1,83 @@
+# 🎬 Movie Recommendation System
 
-
-#  Airline Reservation System  
-
-A lightweight **C++17 console application** that handles airline flight schedules, ticket booking, passenger records, and cancellations — all in one place.  
-This project was built to practice **file handling** and **object-oriented programming** concepts while simulating a real-world airline reservation workflow.  
+A **content-based recommendation system** built with **Python, Pandas, Scikit-learn, and Streamlit**.  
+It suggests similar movies based on genres and descriptions using **cosine similarity**.
 
 ---
 
-##  What It Does  
-
-- **Manage Flights**  
-  - View a list of all flights with departure/arrival details.  
-  - Add new flights (admin mode).  
-  - Show seat maps to check availability at a glance.  
-
-- **Handle Passengers**  
-  - Book tickets with custom seat selection and food preferences.  
-  - View all passengers or just those on a specific flight.  
-  - Cancel reservations quickly using Passenger ID.  
-
-- **Data Persistence**  
-  - All flights, passengers, and IDs are stored in simple text files, so your data survives after program restarts.  
+## 📌 Features
+- Content-based filtering using **NLP (CountVectorizer + Cosine Similarity)**
+- Interactive **Streamlit UI** for searching and recommending movies
+- Fast and lightweight recommender system
+- Works on **5,000+ movies dataset** from TMDB
 
 ---
 
-##  Technologies Used  
+## 🚀 Demo Screenshots
 
-- **Language:** C++17  
-- **Core Concepts:** Classes, Linked Lists, File I/O  
-- **Environment:** Works in VS Code, Code::Blocks, or any C++17-compatible compiler  
+### 🏠 Home Page
+![Home Page](screenshots/screenshot_home.png)
 
----
+### 🎥 Recommendations Example 1
+![Recommendations](screenshots/screenshot_recommendations.png)
 
-## Project Structure  
-
-| File | Purpose |  
-|-------|---------|  
-| `AirlineReservationSystem.cpp` | Main program source code |  
-| `flights.txt` | Stores flight data (auto-created if missing) |  
-| `passengers.txt` | Stores passenger data (auto-created if missing) |  
-| `next_id.txt` | Tracks Passenger IDs between runs |  
+### 🎥 Recommendations Example 2
+![More Recommendations](screenshots/screenshot_recommendations1.png)
 
 ---
 
-## How to Build and Run  
+## ⚙️ Installation & Usage
 
-1. **Compile:**  
-
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/harsh8767/Movie-Recommendation-System.git
+cd Movie-Recommendation-System
 ```
-g++ -std=c++17 AirlineReservationSystem.cpp -o AirlineReservationSystem
-````
 
-2. **Run:**
-
+### 2️⃣ Install Dependencies
+```bash
+pip install streamlit scikit-learn pandas requests
 ```
-./AirlineReservationSystem       # on Linux / Mac
-AirlineReservationSystem.exe     # on Windows
+
+### 3️⃣ Preprocess Data
+Generate the required pickle files:
+```bash
+python preprocess.py
+```
+
+### 4️⃣ Run the Application
+```bash
+python -m streamlit run app.py
 ```
 
 ---
 
-## Menu Overview
-
-When you start the program, you’ll see:
-
+## 📂 Project Structure
 ```
-===== Airline Reservation System =====
-1. List All Flights
-2. View Flight Details
-3. Book Ticket(s)
-4. Cancel Reservation
-5. View All Passengers
-6. Add Flight (admin)
-7. Exit
+Movie_Recommendation/
+│── app.py                 # Streamlit application
+│── preprocess.py          # Preprocessing & pickle file generator
+│── tmdb_5000_movies.csv   # Dataset (movies info)
+│── tmdb_5000_credits.csv  # Dataset (movie credits)
+│── screenshots/           # UI Screenshots
+│    ├── screenshot_home.png
+│    ├── screenshot_recommendations.png
+│    └── screenshot_recommendations1.png
 ```
 
 ---
 
-##  Screenshots
-
-### Main Menu
-
-![Main Menu](images/menu.png)
-
-### Flights List
-
-![Flights List](images/list-flights.png)
-
-### Booking Tickets
-
-![Booking Tickets](images/book-ticket.png)
-
-### View Passengers
-
-![View Passengers](images/view-passengers.png)
+## 📝 Notes
+* Large files (`similarity.pkl`, `movies_dict.pkl`) are **not uploaded** to GitHub due to size limits.  
+* They are automatically generated when you run `preprocess.py`.
 
 ---
 
-## 📄 Example Flight Data
-
-If you don’t have a `flights.txt` file, the program will create one with sample data like:
-
-```
-F100|AirWave|Pune|Mumbai|08:00|09:10|30|1500
-F200|SkyHigh|Delhi|Mumbai|09:30|11:30|40|3500
-F300|BlueAir|Chennai|Bengaluru|06:45|07:55|25|1200
-```
-
-`next_id.txt` simply holds the next passenger ID (starts at 1).
+## ⭐ Future Improvements
+* Add **hybrid recommendation** (content + collaborative filtering)  
+* Deploy on **Streamlit Cloud / Heroku**  
+* Enhance UI with **movie posters and ratings**
 
 ---
 
-## Future Ideas
-
-* Store data in a database instead of text files.
-* Add a GUI or a web front-end.
-* Include authentication and mock payment handling.
-
----
-
-## Author
-
-Made by harsh8767 — (https://github.com/harsh8767)
----
-
-
+👨‍💻 Developed by **Harsh Chavan** – [https://github.com/harsh8767](https://github.com/harsh8767)
