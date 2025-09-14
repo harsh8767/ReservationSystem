@@ -1,5 +1,4 @@
 
----
 
 # ✈️ Airline Flight Reservation System
 
@@ -100,5 +99,16 @@ g++ main.cpp Flight.cpp Passenger.cpp ReservationSystem.cpp -o airline
 
 ---
 
+## 📄 Resume Highlight
+
+*“Developed a feature-rich airline reservation system in C++ with OOP, linked lists, and file handling, supporting booking, cancellation, seat selection, and meal preferences. Managed 100+ dynamic passenger records with persistent storage.”*
+
+---
+
+## 👨‍💻 Developed By
+
+[Harsh Chavan](https://github.com/harsh8767)
+
+---
 
 
